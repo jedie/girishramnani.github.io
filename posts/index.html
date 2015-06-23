@@ -9,7 +9,7 @@ layout: default
     <h1 class="header author-header">{{ site.author_name }}</h1>
     <h2 class="header" itemprop="headline">All posts</h2>
 
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
       {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
       {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
@@ -39,3 +39,16 @@ layout: default
     </div>
 
   </div>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a  class="animate-link" href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="animate-link" href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
