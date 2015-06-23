@@ -11,6 +11,7 @@ addthis_id: ra-5587ec965ee72fbc
 post_limit: 10
 author: Girish Ramnani
 paginate: 5
+pagination_path: "/posts/:num/"
 # Social usernames/URs
 github_username:  girishramnani
 stackoverflow_link: http://stackoverflow.com/users/4325278/girish-ramnani
