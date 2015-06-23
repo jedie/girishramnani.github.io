@@ -20,7 +20,7 @@ layout: default
       {% endif %}
 
           <li>
-            <a class="animate-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a class="animate-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small class="hidden-xs">{{ post.category | join:"_" }}</small>
           </li>
       {% if forloop.last %}
         </ul>
