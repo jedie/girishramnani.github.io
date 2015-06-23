@@ -3,5 +3,5 @@
 git add --all
 git commit -m "next post"
 echo "sending online"
-git push <<< "girishramnani \nsharingan1"
+git push
 
