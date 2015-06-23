@@ -37,18 +37,24 @@ layout: default
 
     {% endfor %}
     </div>
-
-  </div>
 <div class="pagination">
+<ul class="pager">
   {% if paginator.previous_page %}
-    <a  class="animate-link" href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    <li><a  class="animate-link pager-link" href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
   {% else %}
-    <span class="previous">Previous</span>
+    <li class="disabled" ><a  class="pager-link disabled" href="#" class="previous">Previous</a></li>
   {% endif %}
+<!--
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a class="animate-link" href="{{ paginator.next_page_path }}" class="next">Next</a>
+-->
+    <li ><a class="animate-link pager-link" href="{{ paginator.next_page_path }}" class="next">Next</a></li>
   {% else %}
-    <span class="next ">Next</span>
+    <li class="disabled" ><a class="pager-link" href="#" class="next" >Next</a></li>
+        
   {% endif %}
+        </ul>
 </div>
+            
+
+  </div>
