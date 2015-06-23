@@ -43,10 +43,8 @@ layout: default
   {% else %}
     <li class="disabled" ><a  class="pager-link disabled" href="#" class="previous">Previous</a></li>
   {% endif %}
-<!--
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
--->
     <li ><a class="animate-link pager-link" href="{{ paginator.next_page_path }}" class="next">Next</a></li>
   {% else %}
     <li class="disabled" ><a class="pager-link" href="#" class="next" >Next</a></li>
