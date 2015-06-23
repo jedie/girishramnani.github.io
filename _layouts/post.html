@@ -53,17 +53,27 @@ layout: default
       </div>
 
       <div class="content-panel content">
-        <span itemprop="articleBody">{{ content }}</span>
+        <span itemprop="articleBody">{{ content }}
+            <br>
+  
+
+          </span>
 
       
 
-        <div class="tags"><small>
+        <div class="tags"><span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+            
+<!--
+            <small>
           <i class="fa fa-tags"></i>
             {{ page.tags | join: ', ' }}
         </small></div>
+-->
+          </div>            
+
 
       </div>
-
       <div class="content-panel feedback">
        <div id="disqus_thread"></div>
       </div>
