@@ -7,7 +7,7 @@ category:
 
 ---
 
-This is the tutorial series for python which will contain essentail parts of the language.
+This is the tutorial series for python which will contain essential parts of the language.
 So lets begin.
 
 Python is a **weakly** typed programming language, that means you dont need to declare the data type of any variables.
@@ -50,4 +50,26 @@ str_word = str(word)
  
  {% endhighlight %}
 
+## Lists
+
+Lists are collection of obects with sequential integers as key to access them. lists in python are dynamic so you dont need to specify the size of them.
+
+the methods provided by a list are
+
+{% highlight python %}
+
+li = ["work","eat","sleep",12,1.5,["google","twitter"]] # lists can contain
+anything from integers to other objects.
+
+li.append("hey")  #to add an element to the end of the list
+
+del(li[0])   # will delete the first element of the list
+
+#the access can be done using negative numbers as well
+
+print(li[-1])    # will print the last element of the list
+
+li.pop()           # to remove the last element , also pop takes an argument of the index to remove
+
+{% endhighlight %}
 
