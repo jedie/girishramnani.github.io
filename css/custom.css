@@ -12,3 +12,8 @@ word-wrap: break-word;
     margin: 5px 5px 5px 5px;
     background-color: transparent !important ;
 }
+
+body {
+   text-rendering: optimizeLegibility;
+   }
+
