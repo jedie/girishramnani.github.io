@@ -17,8 +17,3 @@ body {
    text-rendering: optimizeLegibility;
    }
 
-body p {
-
-    font-size: 20px !important;
-    line-height: 140% !important;
-}
