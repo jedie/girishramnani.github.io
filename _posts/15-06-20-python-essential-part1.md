@@ -58,8 +58,7 @@ the methods provided by a list are
 
 {% highlight python %}
 
-li = ["work","eat","sleep",12,1.5,["google","twitter"]] # lists can contain
-anything from integers to other objects.
+li = ["work","eat","sleep",12,1.5,["google","twitter"]] # lists can contain anything from integers to other objects.
 
 li.append("hey")  #to add an element to the end of the list
 
