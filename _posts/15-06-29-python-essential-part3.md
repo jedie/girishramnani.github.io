@@ -54,6 +54,7 @@ print(patients_treated.symmetric_difference(patients_who_paid))
 
 There are things that you need to keep in mind while using sets.
 1) Sets dont remember the ordering of the elements added.
+
 2) Sets dont support duplicate items. So if you add 2 "Daniel" then the set will only show one.
 
 ##Lambda 
@@ -90,10 +91,9 @@ will return a list `[6, 7, 8, 9]`
 
 Points to note about lambda : 
 
-1)<p>lambda functions are anonymous function. </p>
+1)lambda functions are anonymous function.
 
-2) <p>they have implied return i.e. you can observe there is no `return` in the lambda function above.</p>
-
+2) they have implied return i.e. you can observe there is no `return` in the lambda function above.
 
 
 ## files
