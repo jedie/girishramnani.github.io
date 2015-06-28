@@ -67,7 +67,7 @@ print(states.get("delhi","sorry no capital"))
 {% endhighlight %}
 There are other methods as well for dictionary but I encourage you to 
 explore from the python's documentation .
-Thats all for today. In the next tutorial sets,lambda,file and basic classes will be explored.
+Thats all for today. In the next tutorial sets,lambda and file IO will be explored.
 
 
 
