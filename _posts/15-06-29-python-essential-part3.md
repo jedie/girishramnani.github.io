@@ -53,8 +53,8 @@ print(patients_treated.symmetric_difference(patients_who_paid))
 {% endhighlight %}
 
 There are things that you need to keep in mind while using sets.
->Sets dont remember the ordering of the elements added.
->Sets dont support duplicate items. So if you add 2 "Daniel" then the set will only show one.
+1) Sets dont remember the ordering of the elements added.
+2) Sets dont support duplicate items. So if you add 2 "Daniel" then the set will only show one.
 
 ##Lambda 
 
@@ -68,6 +68,7 @@ consider a list given below now i want to sort this list on the bases of the sec
 `
 li = [[1,"girish"],[2,"amit"],[3,"yash"]]
 `
+
 so
 
 
@@ -78,6 +79,7 @@ here you can observe a mapping between a function and a lambda as
 
 `def work(x) : return x[1] => lambda x : x[1]
 `
+
 similarly
 
 ###filter
@@ -88,8 +90,9 @@ will return a list `[6, 7, 8, 9]`
 
 Points to note about lambda : 
 
->lambda functions are anonymous function.
->they have implied return i.e. you can observe there is no `return` in the lambda function above.
+1)<p>lambda functions are anonymous function. </p>
+
+2) <p>they have implied return i.e. you can observe there is no `return` in the lambda function above.</p>
 
 
 
@@ -116,18 +119,19 @@ content = file.read(10) # will read first 10 characters
 
 content = file.readline() # to read one line
 
-content = file.readlines() # to read all the lines as a list of string
+content = file.readlines() # to read all the lines as a list
 
 #Content can be read use `for in` type of syntax as well 
 
 
 for line in file:
-    print(line)     # but here keep in mind each line in the file ends with "\n" and print also adds one more
-                    # so lines will be printed with an extra blank line between them
+    print(line)     
+    
+    """but here keep in mind each line in the file ends with "\n" and print also adds one more so lines will be printed with an extra blank line between them """
                     
 # to avoid an extra blank line from printing use .. 
 
-    print(line , end="")  # by default end ="\n" (on windows "\r\n" )that why after every print statement goes to the next line.
+    print(line , end="")  # by default end ="\n" (on windows "\r\n")  that why after every print statement goes to the next line.
     
 {% endhighlight %}
 
