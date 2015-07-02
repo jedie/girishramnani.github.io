@@ -1,0 +1,16 @@
+#editor, #actions, #loading, .CodeMirror {
+    display:none;
+}
+.CodeMirror {
+    margin-top: 5px;
+    border-top: 1px solid black; border-bottom: 1px solid black;
+    height: 60%;
+}
+#console {
+    position: absolute;
+    width: 90%;
+    height: 30%;
+}
+.float_right {
+    float:right;
+}
